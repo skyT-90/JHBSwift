@@ -25,19 +25,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
 //            window.rootViewController = UIHostingController(rootView:  contentView)
-             let navigation = UINavigationController(rootViewController: JHBMainViewController())
-            window.rootViewController = navigation
+//             let navigation = UINavigationController(rootViewController: JHBMainViewController())
+            window.rootViewController = JHBTabBarViewController()
             self.window = window
             window.makeKeyAndVisible()
         }
-//        self.window = UIWindow(frame: UIScreen.main.bounds)
-//        self.window?.rootViewController = JHBTabBarViewController()
-//        self.window?.makeKeyAndVisible()
-        
-//        self.window = UIWindow(frame: UIScreen.main.bounds)
-//        let rootV = JHBMainViewController()
-//        self.window?.rootViewController = rootV
-//        self.window?.makeKeyAndVisible()
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
