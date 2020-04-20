@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		15503B6B23C8545600F6E27A /* NSObject-ClassFromStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15503B6A23C8545600F6E27A /* NSObject-ClassFromStr.swift */; };
 		15503B6D23C859D600F6E27A /* TabBarItemConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15503B6C23C859D500F6E27A /* TabBarItemConfig.plist */; };
 		15503B7223C85B9C00F6E27A /* JHBNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15503B7123C85B9C00F6E27A /* JHBNavView.swift */; };
+		157E145B244DC04B007B43FF /* GlobalDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157E145A244DC04B007B43FF /* GlobalDefine.swift */; };
 		EDC74E3D9794BA08B00A0E1C /* Pods_JHBSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9506CC4F4BA6B1E793BFC0 /* Pods_JHBSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		15503B6A23C8545600F6E27A /* NSObject-ClassFromStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject-ClassFromStr.swift"; sourceTree = "<group>"; };
 		15503B6C23C859D500F6E27A /* TabBarItemConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabBarItemConfig.plist; sourceTree = "<group>"; };
 		15503B7123C85B9C00F6E27A /* JHBNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHBNavView.swift; sourceTree = "<group>"; };
+		157E145A244DC04B007B43FF /* GlobalDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDefine.swift; sourceTree = "<group>"; };
 		514928F47763FC825A2BD8C9 /* Pods-JHBSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHBSwift.release.xcconfig"; path = "Target Support Files/Pods-JHBSwift/Pods-JHBSwift.release.xcconfig"; sourceTree = "<group>"; };
 		78DD299C319D5809C8DA8DB6 /* Pods-JHBSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHBSwift.debug.xcconfig"; path = "Target Support Files/Pods-JHBSwift/Pods-JHBSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		9D9506CC4F4BA6B1E793BFC0 /* Pods_JHBSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHBSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 		15503ADF23C5F1EA00F6E27A /* JHBSwift */ = {
 			isa = PBXGroup;
 			children = (
+				157E1457244DBFE0007B43FF /* Public */,
 				15503B6E23C85AF800F6E27A /* UtilsView */,
 				15503B6723C8536200F6E27A /* Extensions */,
 				15503B5E23C825F900F6E27A /* Mine */,
@@ -234,6 +237,14 @@
 			path = UtilsView;
 			sourceTree = "<group>";
 		};
+		157E1457244DBFE0007B43FF /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				157E145A244DC04B007B43FF /* GlobalDefine.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 		A237C515CCC40C2C83FA23DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,7 +259,6 @@
 				78DD299C319D5809C8DA8DB6 /* Pods-JHBSwift.debug.xcconfig */,
 				514928F47763FC825A2BD8C9 /* Pods-JHBSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -438,6 +448,7 @@
 				15503B6B23C8545600F6E27A /* NSObject-ClassFromStr.swift in Sources */,
 				15503B7223C85B9C00F6E27A /* JHBNavView.swift in Sources */,
 				15503B6623C8267A00F6E27A /* JHBNavgationViewController.swift in Sources */,
+				157E145B244DC04B007B43FF /* GlobalDefine.swift in Sources */,
 				15503B1223C5FA2400F6E27A /* JHBTabBarViewController.swift in Sources */,
 				15503B5823C8256300F6E27A /* JHBHomeViewController.swift in Sources */,
 			);
