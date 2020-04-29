@@ -28,9 +28,9 @@ class JHBNavView: UIView {
     
     fileprivate lazy var backBtn: UIButton = {
         let backBtn = UIButton()
-        backBtn.setImage(UIImage(named: "nav_btn_back_white"), for: .normal)
+        backBtn.setImage(UIImage(named: "nav_btn_back_white"), for: UIControl.State.normal)
         backBtn.sizeToFit()
-        backBtn.addTarget(self, action: #selector(backAction(bt:)), for: .touchUpInside)
+        backBtn.addTarget(self, action: #selector(backAction(bt:)), for: UIControl.Event.touchUpInside)
         return backBtn
     }()
     

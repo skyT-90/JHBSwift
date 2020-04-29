@@ -39,3 +39,8 @@ let kStatusBarHeight = IS_IPHONEXAll ? 44.0 : 20.0
 let kSafeAreaTopHeight = IS_IPHONEXAll ? 88.0 : 64.0
 let kSafeAreaBottomHeight = IS_IPHONEXAll ? 34.0 : 0
 let kTabbarHeight = 49.0
+
+func Scale(_ value:Float) -> CGFloat {
+    return CGFloat(Float(KscreenWidth/750) * value)
+}
+

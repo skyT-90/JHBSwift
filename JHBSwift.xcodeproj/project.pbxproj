@@ -24,6 +24,10 @@
 		15503B6B23C8545600F6E27A /* NSObject-ClassFromStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15503B6A23C8545600F6E27A /* NSObject-ClassFromStr.swift */; };
 		15503B6D23C859D600F6E27A /* TabBarItemConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15503B6C23C859D500F6E27A /* TabBarItemConfig.plist */; };
 		15503B7223C85B9C00F6E27A /* JHBNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15503B7123C85B9C00F6E27A /* JHBNavView.swift */; };
+		1557D59F2455AA0700139171 /* JHBNavTitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1557D59E2455AA0700139171 /* JHBNavTitleBar.swift */; };
+		1557D5C92456F95B00139171 /* UIFont-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1557D5C82456F95B00139171 /* UIFont-Extension.swift */; };
+		1557D5CB2457D48100139171 /* UIView-JHBSafeAreaInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1557D5CA2457D48100139171 /* UIView-JHBSafeAreaInsets.swift */; };
+		1557D5CD245807EF00139171 /* UIViewController-JHBNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1557D5CC245807EF00139171 /* UIViewController-JHBNav.swift */; };
 		157E145B244DC04B007B43FF /* GlobalDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157E145A244DC04B007B43FF /* GlobalDefine.swift */; };
 		EDC74E3D9794BA08B00A0E1C /* Pods_JHBSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9506CC4F4BA6B1E793BFC0 /* Pods_JHBSwift.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +73,10 @@
 		15503B6A23C8545600F6E27A /* NSObject-ClassFromStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject-ClassFromStr.swift"; sourceTree = "<group>"; };
 		15503B6C23C859D500F6E27A /* TabBarItemConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabBarItemConfig.plist; sourceTree = "<group>"; };
 		15503B7123C85B9C00F6E27A /* JHBNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHBNavView.swift; sourceTree = "<group>"; };
+		1557D59E2455AA0700139171 /* JHBNavTitleBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHBNavTitleBar.swift; sourceTree = "<group>"; };
+		1557D5C82456F95B00139171 /* UIFont-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont-Extension.swift"; sourceTree = "<group>"; };
+		1557D5CA2457D48100139171 /* UIView-JHBSafeAreaInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-JHBSafeAreaInsets.swift"; sourceTree = "<group>"; };
+		1557D5CC245807EF00139171 /* UIViewController-JHBNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-JHBNav.swift"; sourceTree = "<group>"; };
 		157E145A244DC04B007B43FF /* GlobalDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDefine.swift; sourceTree = "<group>"; };
 		514928F47763FC825A2BD8C9 /* Pods-JHBSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHBSwift.release.xcconfig"; path = "Target Support Files/Pods-JHBSwift/Pods-JHBSwift.release.xcconfig"; sourceTree = "<group>"; };
 		78DD299C319D5809C8DA8DB6 /* Pods-JHBSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHBSwift.debug.xcconfig"; path = "Target Support Files/Pods-JHBSwift/Pods-JHBSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +134,7 @@
 		15503ADF23C5F1EA00F6E27A /* JHBSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1557D59C2455A99400139171 /* CommonUI */,
 				157E1457244DBFE0007B43FF /* Public */,
 				15503B6E23C85AF800F6E27A /* UtilsView */,
 				15503B6723C8536200F6E27A /* Extensions */,
@@ -193,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				15503B5A23C8259500F6E27A /* JHBBaseViewController.swift */,
+				1557D5CC245807EF00139171 /* UIViewController-JHBNav.swift */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -237,9 +247,35 @@
 			path = UtilsView;
 			sourceTree = "<group>";
 		};
+		1557D59C2455A99400139171 /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				1557D59D2455A9AF00139171 /* navView */,
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
+		1557D59D2455A9AF00139171 /* navView */ = {
+			isa = PBXGroup;
+			children = (
+				1557D59E2455AA0700139171 /* JHBNavTitleBar.swift */,
+			);
+			path = navView;
+			sourceTree = "<group>";
+		};
+		1557D5C52456F89900139171 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1557D5C82456F95B00139171 /* UIFont-Extension.swift */,
+				1557D5CA2457D48100139171 /* UIView-JHBSafeAreaInsets.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		157E1457244DBFE0007B43FF /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				1557D5C52456F89900139171 /* Extension */,
 				157E145A244DC04B007B43FF /* GlobalDefine.swift */,
 			);
 			path = Public;
@@ -443,13 +479,17 @@
 				15503AE123C5F1EA00F6E27A /* AppDelegate.swift in Sources */,
 				15503B6223C8262700F6E27A /* JHBCityViewController.swift in Sources */,
 				15503B6023C8261300F6E27A /* JHBMessageViewController.swift in Sources */,
+				1557D5C92456F95B00139171 /* UIFont-Extension.swift in Sources */,
 				15503B6423C8263500F6E27A /* JHBMineViewController.swift in Sources */,
 				15503AE323C5F1EA00F6E27A /* SceneDelegate.swift in Sources */,
 				15503B6B23C8545600F6E27A /* NSObject-ClassFromStr.swift in Sources */,
 				15503B7223C85B9C00F6E27A /* JHBNavView.swift in Sources */,
+				1557D59F2455AA0700139171 /* JHBNavTitleBar.swift in Sources */,
 				15503B6623C8267A00F6E27A /* JHBNavgationViewController.swift in Sources */,
+				1557D5CD245807EF00139171 /* UIViewController-JHBNav.swift in Sources */,
 				157E145B244DC04B007B43FF /* GlobalDefine.swift in Sources */,
 				15503B1223C5FA2400F6E27A /* JHBTabBarViewController.swift in Sources */,
+				1557D5CB2457D48100139171 /* UIView-JHBSafeAreaInsets.swift in Sources */,
 				15503B5823C8256300F6E27A /* JHBHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
